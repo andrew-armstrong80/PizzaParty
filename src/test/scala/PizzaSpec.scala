@@ -14,6 +14,11 @@ class PizzaSpec extends WordSpec with MustMatchers{
         "To feed 7 hungry apprentices, I need 4 pizzas. I have 4 leftover slices!"
       }
     }
+
+    "return a String when given a wrong combination of Int, List(String)" in {
+      Pizza.Counter(4, List("1/2", "3/4", "1/2")) mustEqual
+        "You have not selected the correct portions"
+    }
   }
 
   "fractionChanger" must {
