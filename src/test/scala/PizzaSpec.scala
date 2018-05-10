@@ -54,8 +54,6 @@ class PizzaSpec extends WordSpec with MustMatchers{
     "return 7 when given '7/8'" in {
       Pizza.fractionChanger("7/8") mustEqual (7)
     }
-
-
   }
 
 
